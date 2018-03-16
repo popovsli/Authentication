@@ -32,7 +32,7 @@ namespace Authentication
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
-
+            
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
